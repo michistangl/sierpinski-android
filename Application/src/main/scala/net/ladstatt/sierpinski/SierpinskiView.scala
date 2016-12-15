@@ -16,7 +16,28 @@ import scala.Option
   */
 class SierpinskiView(val context: Context, val attrs: AttributeSet) extends View(context, attrs) {
 
+  override protected def onDraw(canv:Canvas) {
+    super.onDraw(canv)
 
-
+    val triangle = new Triangle(canv)
+    triangle.drawTriangle()
+  }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
